@@ -3,15 +3,19 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro IdadeA, IdadeM, IdadeD, MesesemDias, AnosemDias, IdadeemDias
-		escreva("Digite sua idade em Anos, Meses e Dias \n")
-		leia(IdadeA)
-		leia(IdadeM)
-		leia(IdadeD)
-		AnosemDias = IdadeA * 365
-		MesesemDias = IdadeM * 30
-		IdadeemDias = AnosemDias + MesesemDias + IdadeD
-		escreva("A idade em dias é :" + IdadeemDias)
+		inteiro numero
+
+		escreva("Digite um número: ")
+		leia(numero)
+
+		se(numero > 100){
+		escreva(numero)
+		}
+			
+		senao se(numero <= 100){
+		escreva(0)
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 314; 
+ * @POSICAO-CURSOR = 149; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
